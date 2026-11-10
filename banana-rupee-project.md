@@ -1,12 +1,16 @@
-# Banana Rupee
+# Banana Play
 ## Empowering Indian Teenagers
 ### A game-first financial literacy project
 
-**Project concept | School-ready proposal**
+**Project concept | current prototype and roadmap**
+
+> **Current build:** Banana Play is a single-player browser game in Nayi Disha. Players start with ₹2,500 and make a five-day money plan by exploring town, taking paid shifts, helping neighbours, shopping, saving or borrowing at the bank, managing energy, and responding to daily events. Progress saves in the browser. The Reset button clears the saved game after confirmation. After five days, players can review a summary and continue in free-explore mode.
+>
+> The sections below describe the larger school-ready direction and proposed future work; they are not all available in the current game.
 
 ### 1. The idea
 
-**Banana Rupee** is a free, mobile-first money-and-economy simulation for teenagers aged 13–18. Players run a small household and community through everyday choices: earn, spend, save, borrow, invest, insure, and respond to changing prices and jobs. Every choice changes what happens next, so learners build intuition by experimenting and seeing consequences rather than memorising definitions.
+**Banana Play** is a free browser-based financial literacy game for teenagers. Players explore a fictional Indian town and practise choices about paid work, spending, saving, borrowing, household costs, and helping neighbours. Its five-day challenge makes the consequences of those choices visible, then offers a summary and free-explore mode.
 
 **One-line pitch:** Learn how money moves by making the calls yourself.
 
@@ -14,7 +18,7 @@
 
 The problem statement cites a 2022 report that only about 27% of Indian adults are financially literate, compared with 57% in the US and 67% in the UK. Many teenagers therefore have limited access to practical money learning at home. One-off workshops and course-style content can explain ideas, but they often provide too little safe practice with decisions and trade-offs.
 
-Banana Rupee makes that practice repeatable, low-stakes, social, and available in local languages. It teaches financial capability alongside the wider idea that households, businesses, banks, government, and prices are connected.
+Banana Play makes that practice repeatable, low-stakes, social, and available in local languages. It teaches financial capability alongside the wider idea that households, businesses, banks, government, and prices are connected.
 
 ### 3. Who it serves
 
@@ -25,20 +29,17 @@ Banana Rupee makes that practice repeatable, low-stakes, social, and available i
 
 ### 4. The learning experience
 
-A player joins **Nayi Disha**, a fictional Indian town. They choose a character and start with a limited monthly income. Across short rounds they make decisions for their household while the town changes around them.
+A player names their character and joins **Nayi Disha**, a fictional Indian town, with a starting wallet of ₹2,500. They explore on foot, talk with residents, visit local businesses, take shifts, and help with neighbourhood tasks.
 
-**Core loop:** get a life event → choose an action → see the immediate result → advance time → see the delayed consequence → reflect and try again.
+**Core loop:** explore → choose how to earn or spend → see the result → manage time and energy → end the day → plan for the next day.
 
-Example: A player can spend their spare ₹500 now, save it, or put it toward a goal. Later, a phone repair, a festival, or an unexpected loss of work tests the trade-off. The game shows what happened and why, then offers a replay so learners can test a different choice. There is no single “perfect” life path: the debrief focuses on trade-offs, uncertainty, and the player's goals.
+The five-day challenge introduces changing daily events, household rent, a surprise repair, and choices about savings and debt. A report summarizes work income, spending, savings, and debt after Day 5. Players can then continue in free-explore mode. A Reset button, with a confirmation step, clears the saved game and returns to the start.
 
-#### Game modes
-
-1. **My Month (10–15 minutes):** manage income and expenses through a month; practise budgeting, needs versus wants, and emergency savings.
-2. **Town Builder (20–30 minutes):** work in a small team as households, shopkeepers, a bank, and a local council. Teams trade, set prices, lend, and respond to a shock. Learners see how money and decisions circulate through an economy.
-3. **Life Paths (10 minutes each):** branching stories about a first job, opening a bank account, borrowing for a goal, a scam message, or a family emergency.
-4. **Challenge Cards (5 minutes):** facilitator-led quick rounds for classrooms with limited devices; learners vote on a choice and discuss the outcome.
+The game supports keyboard movement with WASD or the arrow keys, interaction with E, and selecting places on the map. It stores progress in the browser on the player's device.
 
 ### 5. What learners practise
+
+The current prototype practises budgeting, spending, saving, borrowing and debt, paid work, energy planning, and how money moves through a local town. The table also includes longer-term learning goals; not every concept is playable yet.
 
 | Concept | In-game decision | Learner takeaway |
 |---|---|---|
@@ -65,28 +66,33 @@ Example: A player can spend their spare ₹500 now, save it, or put it toward a 
 
 ### 7. Classroom use
 
-A suggested 40-minute session:
+A suggested 40-minute session using the current five-day game:
 
-- **5 min:** facilitator introduces the scenario and learning goal.
-- **15 min:** individual or pair play of *My Month*.
-- **10 min:** small-group *Town Builder* round or Challenge Card.
-- **10 min:** debrief: What changed? Who was affected? What would you try next time?
+- **5 min:** introduce the town and ask learners what they would want to plan for.
+- **20 min:** play individually or in pairs; compare a work choice, a spending choice, and whether to save or borrow.
+- **10 min:** review the money story and discuss how choices affected the next day.
+- **5 min:** invite learners to reset and name one choice they would try differently.
 
-Teachers get a one-page guide, ready-made discussion prompts, and an optional class summary showing participation and concept-level progress. The dashboard should show aggregate learning signals, not rank or profile students.
+The repository currently contains a single-player browser game. Team-based Town Builder activities, teacher dashboards, printable cards, and class summaries are proposed future additions, not features of the current build.
 
-### 8. MVP scope
+### 8. Current build and next steps
 
-**Build first:**
+The repository currently contains a single-file browser prototype in `Banana Rupee.html`.
 
-- Responsive web app, playable on basic phones, tablets, and school computers.
-- One town, three character profiles, six rounds per playthrough.
-- *My Month* and a simplified *Town Builder*.
-- Five concepts: budgeting, saving, interest, inflation, and borrowing.
-- English and Hindi content, with translation support built into the content system.
-- Teacher guide, printable cards, basic accessibility support, and a short pre/post learning check.
-- Offline-friendly design: cache the game shell and scenario assets where feasible; provide printables when a connection is unavailable.
+**In the current build:**
 
-**Defer until validated:** individual accounts, complex financial products, open-ended chat, competitive rankings, real-time multiplayer, and a large analytics dashboard.
+- Explore one town and interact with residents and local places.
+- Take paid shifts and community tasks.
+- Manage wallet money, savings, debt, expenses, energy, and daily choices.
+- Play a five-day challenge, review a summary, and continue exploring.
+- Save progress in the browser and reset the complete game after confirmation.
+
+**Longer-term roadmap:**
+
+- Add classroom materials, printable activities, and educator guidance.
+- Expand language support and accessibility options.
+- Validate the game with teens and educators before adding more scenarios or modes.
+- Consider team activities and class-level learning summaries after the core experience is tested.
 
 ### 9. Build and rollout plan
 
